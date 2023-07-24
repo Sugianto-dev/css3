@@ -1,0 +1,80 @@
+<!-- Transform memungkinkan kita dapat memanipulasi format visual dari elemen HTML, baik itu ukuran, bentuk ataupun posisi -->
+<!-- Transformasi 2D & 3D -->
+<!-- 
+Cara Penulisan :
+
+transform: fungsi;
+ -->
+<!-- 
+Fungsi Transformasi :
+
+scale 		(memperbesar / memperkecil)
+rotate		(memutar)
+skew		(membuat condong / miring)
+translate	(mengubah posisi)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Transform</title>
+	<style type="text/css">
+		p {
+			font-size: 20px;
+			text-align: center;
+		}
+
+		/*
+			scale(angka), scaleX(angka), scaleY(angka)
+			rotate(deg), rotateX(deg), rotateY(deg)
+			skew(deg), skewX(deg), skewY(deg)
+			translate(px), translateX(px), translateY(px)
+		*/
+
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			margin: 50px auto 0;
+			/*transform: scale(0.5);*/
+
+			transition: 1s;
+		}
+
+		.kotak:hover {
+			/*SCALE*/
+			/*transform: scale(1.5, 2);*/ /*sumbu-x : 1.5 & sumbu-y : 2*/
+			/*transform: scaleX(1.5) scaleY(2);*/
+
+			/*ROTATE*/
+			/*transform: rotate(-45deg);*/
+			/*transform: rotateX(180deg);*/
+			/*transform: rotateY(90deg);*/
+			/*transform: rotate(180deg) rotateX(180deg) rotateY(180deg);*/
+
+			/*SKEW*/
+			/*transform: skew(30deg);*/ /*Note : skew sama dengan skewX*/
+			/*transform: skewY(-30deg);*/
+
+			/*TRANSLATE*/
+			/*transform: translate(50px);*/
+			/*transform: translate(50px, 100px);*/ /*kanan : 50px dan bawah : 100px*/
+			/*transform: translateX(50px) translateY(100px);*/
+
+			transform: scale(3) rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="kotak"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

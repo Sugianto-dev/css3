@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Radial Gradient</title>
+	<style type="text/css">
+		div {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+
+			/*Contoh 1*/
+			/*background-image: radial-gradient(red, green);*/
+
+			/*Contoh 2*/
+			/*background-image: radial-gradient(red, green, blue);*/
+
+			/*Contoh 3 COLOR STOP*/
+			/*background-image: radial-gradient(red 10%, green 20%, blue 80%);*/
+
+			/*Contoh 4 TIPE*/
+			/*Value TIPE : ellipse, circle*/
+			/*background-image: radial-gradient(ellipse, red, blue);*/
+
+			/*Contoh 5 JANGKAUAN*/
+			/*
+			Value JANGKAUAN : 
+
+			closest-corner
+			closest-side
+			farthest-corner
+			farthest-side
+			*/
+			/*background-image: radial-gradient(tipe jangkauan, warna 1, warna 2, ... dst)*/
+			/*background-image: radial-gradient(circle closest-side, red, blue);*/
+
+			/*Contoh 6 POSISI*/
+			/*background-image: radial-gradient(tipe jangkauan at posisi-y posisi-x, warna 1, warna 2, ... dst);*/
+			/*
+			Value POSISI :
+
+			posisi-y		|     posisi-x
+			top             |     left
+			center          |     center
+			bottom          |     right
+			...px           |     ...px
+			*/
+			background-image: radial-gradient(circle farthest-side at top left, red, blue);
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

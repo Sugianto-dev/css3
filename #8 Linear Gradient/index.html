@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Linear Gradient</title>
+
+	<!-- Note Linear Gradient bukan property css3, melainkan value untuk background-image -->
+
+	<style type="text/css">
+		div {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+
+			/*background-image: linear-gradient(warna satu, warna dua, ... dst);*/
+
+			/*Contoh 1*/
+			/*background-image: linear-gradient(red, green);*/
+
+			/*Contoh 2*/
+			/*Note Bisa hanya background saja*/
+			/*background: linear-gradient(red, #f0d606, rgba(255,255,0,1), green);*/
+
+			/*Contoh 3 Dengan SUDUT*/
+			/*background: linear-gradient(sudut, warna satu, warna dua, ... dst);*/
+			/*background: linear-gradient(90deg, red, green);*/
+
+			/*Contoh 4 Dengan ARAH*/
+			/*background: linear-gradient(arah, warna satu, warna dua, ... dst);*/
+			/*
+			Value ARAH :
+			
+			to bottom
+			to top
+			to left
+			to right
+
+			to left top      /  to top left
+			to left bottom   /  to bottom left
+			to right top     /  to top right
+			to right bottom  /  to bottom right
+			*/
+			/*background: linear-gradient(to bottom right, red, green);*/
+
+			/*Contoh 5 Dengan COLOR STOP*/
+			/*background: linear-gradient(sudut|arah, warna satu 0-100%, warna dua 0-100%, ... dst 0-100%);*/
+			background: linear-gradient(to right, red 63%, green 80%);
+		}
+	</style>
+
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

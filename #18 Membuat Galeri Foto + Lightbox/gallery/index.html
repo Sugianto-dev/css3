@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gallery Lightbox</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Naruto</h1>
+
+	<div class="container">
+		
+		<ul class="gallery">
+			<li>
+				<a href="#gambar-1">
+					<img src="img/thumbs/naruto.jpg" alt="Uzumaki Naruto">
+					<span>Uzumaki Naruto</span>
+				</a>
+
+				<div class="overlay" id="gambar-1">
+					<a href="#" class="close">x close</a>
+					<a href="#gambar-4" class="prev">prev</a>
+					<img src="img/full/naruto.jpg" alt="Uzumaki Naruto">
+					<a href="#gambar-2" class="next">next</a>
+				</div>
+			</li>
+
+			<li>
+				<a href="#gambar-2">
+					<img src="img/thumbs/sasuke.jpg" alt="Uciha Sasuke">
+					<span>Uciha Sasuke</span>
+				</a>
+
+
+				<div class="overlay" id="gambar-2">
+					<a href="#" class="close">x close</a>
+					<a href="#gambar-1" class="prev">prev</a>
+					<img src="img/full/sasuke.jpg" alt="Uciha Sasuke">
+					<a href="#gambar-3" class="next">next</a>
+				</div>
+			</li>
+
+			<li>
+				<a href="#gambar-3">
+					<img src="img/thumbs/boruto.jpg" alt="Uzumaki Boruto">
+					<span>Uzumaki Boruto</span>
+				</a>
+
+				<div class="overlay" id="gambar-3">
+					<a href="#" class="close">x close</a>
+					<a href="#gambar-2" class="prev">prev</a>
+					<img src="img/full/boruto.jpg" alt="Uzumaki Boruto">
+					<a href="#gambar-4" class="next">next</a>
+				</div>
+			</li>
+
+			<li>
+				<a href="#gambar-4">
+					<img src="img/thumbs/itachi.jpg" alt="Uciha Itachi">
+					<span>Uciha Itachi</span>
+				</a>
+
+				<div class="overlay" id="gambar-4">
+					<a href="#" class="close">x close</a>
+					<a href="#gambar-3" class="prev">prev</a>
+					<img src="img/full/itachi.jpg" alt="Uciha Itachi">
+					<a href="#gambar-1" class="next">next</a>
+				</div>
+			</li>
+
+			<div class="clear"></div> <!-- Untuk mengatasi bug css FLOAT di li -->
+		</ul>
+
+	</div>
+
+</body>
+</html>

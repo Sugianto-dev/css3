@@ -1,0 +1,40 @@
+<!-- Vendor prefixes bertujuan agar sintaks css yang kita buat Compatible di semua browser -->
+<!-- Vendor prefixes adalah sintaks khusus yang harus ditambahkan untuk beberapa property CSS3 -->
+<!-- Prefix = Awalan, Vendor = browser yg bersangkutan -->
+<!-- 
+Vendor prefixes : 
+
+	-webkit- 	(Chrome, Safari, Opera versi terbaru)
+	-moz- 		(Firefox)
+	-ms- 		(Internet Explorer)
+	-o- 		(Opera versi terdahulu)
+ -->
+<!-- 
+Web Untuk lihat property CSS3 yang butuh prefix :
+
+shouldiprefix.com
+caniuse.com
+http://pleeease.io/play/
+plugin emmet
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Vendor Prefix</title>
+ 	<style type="text/css">
+ 		body {
+ 			text-align: center;
+ 		}
+ 		img {
+ 			-webkit-filter: grayscale(100%); /*Cara penggunaan vendor prefix -webkit-*/
+ 			filter: grayscale(100%); /*Property utamanya jangan dihilangkan*/
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 
+ <img src="levi.jpg" alt="Captain Levi">
+
+ </body>
+ </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Font Face</title>
+
+	<!-- CARA 1 -->
+	<style type="text/css">
+		h1.satu {
+			font-size: 100px;
+			text-align: center;
+
+			/*font-family: "Nama Font", jenis font, tipe font;*/
+			/*Note : jenis font & tipe font disebut fallback dimana akan digunakan jika nama font tidak ada di user/client*/
+			font-family: 'Arial Narrow', arial, sans-serif;
+		}
+	</style>
+
+
+	<!-- CARA 2 -->
+	<!-- Mengambil font dari google https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		h1.dua {
+			font-size: 100px;
+			text-align: center;
+
+			/*font-family: "Nama font dari google", tipe font seperti sans-serif/serif*/
+			font-family: 'Itim', cursive;
+		}
+	</style>
+
+
+	<!-- CARA 3 -->
+	<!-- @font-face -->
+	<!-- 
+	Sintaks Lengkap :
+
+	@font-face {
+		font-family: 'namaFontBaru';
+		src: url('lokasi/file/fontBaru.eot');
+		src: url('lokasi/file/fontBaru.eot?#iefix') format('embedded-opentype'),
+			 url('lokasi/file/fontBaru.woff2') format('woff2'),
+			 url('lokasi/file/fontBaru.woff') format('woff'),
+			 url('lokasi/file/fontBaru.ttf') format('truetype'),
+			 url('lokasi/file/fontBaru.svg#svgFontName') format('svg');
+	}
+	 -->
+	<!-- 
+	Web Layanan Font :
+
+	fonts.google.com
+	fontsquirell.com
+	fontspring.com
+	webtype.com
+	typotheque.com
+	dll.
+	 -->
+	}
+	<style type="text/css">
+		@font-face {
+			font-family: "Alex Brush";
+			src: url('AlexBrush-Regular.ttf') format('truetype');
+		}
+
+		h1.tiga {
+			font-size: 100px;
+			text-align: center;
+			font-family: "Alex Brush", arial;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 class="satu">Hello World</h1>
+
+	<h1 class="dua">Hello World</h1>
+
+	<h1 class="tiga">Hello World</h1>
+
+</body>
+</html>

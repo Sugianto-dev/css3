@@ -1,0 +1,91 @@
+<!-- 
+	@keyframes nama {
+		from {
+			property-css
+		}
+
+		to {
+			property-css
+		}
+	}
+ -->
+
+<!-- 
+	Nilai - nilai pada animation :
+
+	name (nama animasi)
+	duration (1s - ns)
+	timing-function (ease, ease-in, ease-out, ease-in-out, linear)
+	delay (1s - ns)
+	iteration-count (angka, infinite)
+	direction (normal, reverse, alternate, alternate-reverse)
+	fill-mode (none, forwards, backwards, both)
+	play-state (running, paused)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Animation</title>
+ 	<style type="text/css">
+ 		.kotak {
+ 			width: 200px;
+ 			height: 200px;
+ 			background-color: salmon;
+ 			/*transition: 2s ease all;*/
+
+ 			/*ANIMATION PERCOBAAN 2*/
+ 			/*animation: nama_animasi durasi timing_function iteration_count direction fill_mode play_state*/
+ 			animation: animasiKotak 3s ease 3 alternate forwards paused; /*Animasi terjadi pada saat halaman terbuka*/
+ 			/*Note: fill-mode : forwards digunakan agar bentuk kotak tetap sesuai dengan bentuk pada saat iteration-count terakhir*/
+ 			/*Note: play-state : paused biasa digunakan pada javascript untuk mengatur berhentinya animasi*/
+
+ 			/*Contoh jika ditulis per baris*/
+ 			/*animation-name: animasiKotak;
+ 			animation-duration: 2s;
+ 			animation-timing-function: ease;
+ 			animation-iteration-count: infinite;*/
+ 		}
+
+ 		.kotak:hover {
+ 			/*width: 500px;*/
+
+ 			/*ANIMATION PERCOBAAN 1*/
+ 			/*animation: nama_animasi durasi timing_function*/
+ 			/*animation: animasiKotak 2s ease;*/ /*Animasi terjadi pada saat mouse diatasnya*/
+ 		}
+
+ 		@keyframes animasiKotak {
+ 			/*PAKAI FROM TO*/
+ 			/*from {
+ 				width: 200px;
+ 			}
+
+ 			to {
+ 				width: 500px;
+ 			}*/
+
+ 			/*PAKAI %*/
+ 			0% {
+ 				width: 200px;
+ 			}
+
+ 			50% {
+ 				width: 500px;
+ 				height: 200px;
+ 			}
+
+ 			100% {
+ 				width: 500px;
+ 				height: 500px;
+ 			}
+ 		}
+ 	</style>
+ </head>
+ <body>
+
+ 	<div class="kotak"></div>
+ 
+ </body>
+ </html>
